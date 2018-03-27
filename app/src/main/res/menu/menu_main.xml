@@ -11,5 +11,11 @@
         android:icon="@drawable/ic_search_white_24dp"
         app:showAsAction="ifRoom">
     </item>
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/ic_favorite_border_white_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Profile">
+    </item>
     
 </menu>
