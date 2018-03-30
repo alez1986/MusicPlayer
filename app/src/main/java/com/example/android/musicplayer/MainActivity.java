@@ -1,6 +1,5 @@
 package com.example.android.musicplayer;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,7 +14,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import static com.example.android.musicplayer.SongAdapter.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -77,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             Intent searchSong = new Intent(MainActivity.this, SearchActivity.class);
             startActivity(searchSong);
 
-            Toast.makeText(MainActivity.this, "Search clicked", Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this, R.string.toast_search, Toast.LENGTH_SHORT).show();
             return true;
         }
 

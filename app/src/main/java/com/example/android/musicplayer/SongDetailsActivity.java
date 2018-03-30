@@ -18,7 +18,7 @@ public class SongDetailsActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_song);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setTitle("Details");
+        getSupportActionBar().setTitle(R.string.details_title);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

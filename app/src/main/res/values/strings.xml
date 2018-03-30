@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Music Player</string>
-    <string name="title_activity_song_details">SongDetailsActivity</string>
+    <string name="search_title">Search</string>
+    <string name="details_title">Details</string>
+    <string name="search_hint">Enter artist or song</string>
+    <string name="toast_play">Play music clicked</string>
+    <string name="toast_search">"Search clicked"</string>
+    <string name="test_artist">Artist</string>
+    <string name="test_song">Song</string>
 </resources>

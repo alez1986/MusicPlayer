@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
@@ -17,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="48dp"
+        android:padding="@dimen/song_padding"
         android:layout_centerInParent="true">
 
         <ImageView
@@ -26,16 +25,14 @@
             android:layout_height="wrap_content"
             android:src="@drawable/song_default"
             android:adjustViewBounds="true"
-            android:layout_gravity="center"
-            android:layout_weight="20"/>
+            android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/artist"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Artist name"
-            android:paddingTop="32dp"
-            android:textSize="32sp"
+            android:paddingTop="@dimen/artist_padding_top"
+            android:textSize="@dimen/artist_text_size"
             android:textStyle="bold"
             android:layout_gravity="center"/>
 
@@ -43,8 +40,7 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Song title"
-            android:textSize="28sp"
+            android:textSize="@dimen/song_text_size"
             android:layout_gravity="center"/>
 
     </LinearLayout>

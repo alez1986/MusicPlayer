@@ -10,7 +10,6 @@ public class Song {
     public String getSinger() {
         return mSinger;
     }
-
     public String getTitle() {
         return mTitle;
     }
