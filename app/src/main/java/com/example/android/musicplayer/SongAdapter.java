@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -29,11 +31,18 @@ public class SongAdapter extends ArrayAdapter<Song> {
 
         Song currentWord = getItem(position);
 
-        TextView singerTextView = (TextView) listItemView.findViewById(R.id.singer);
+        TextView singerTextView = (TextView) listItemView.findViewById(R.id.artist);
         singerTextView.setText(currentWord.getSinger());
 
         TextView titleTextView = (TextView) listItemView.findViewById(R.id.title);
         titleTextView.setText(currentWord.getTitle());
+
+        ImageView img = (ImageView) listItemView.findViewById(R.id.action_image);
+        img.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(v.getContext(), "Play music button clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         //ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
         //iconView.setImageResource(currentAndroidFlavor.getImageResourceId());

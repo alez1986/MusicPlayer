@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,24 +10,43 @@
         layout="@layout/toolbar_main"
         android:id="@+id/toolbar_song"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <ImageView
-        android:id="@+id/song_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/author"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="123"/>
+        android:layout_alignParentTop="true"/>
 
-    <TextView
-        android:id="@+id/artist"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="567"/>
+        android:orientation="vertical"
+        android:padding="48dp"
+        android:layout_centerInParent="true">
 
+        <ImageView
+            android:id="@+id/song_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/song_default"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_weight="20"/>
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist name"
+            android:paddingTop="32dp"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song title"
+            android:textSize="28sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

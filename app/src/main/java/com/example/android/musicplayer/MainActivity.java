@@ -47,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent songDetails = new Intent(MainActivity.this, SongDetailsActivity.class);
+                TextView artistText = (TextView) view.findViewById(R.id.artist);
+                TextView songText = (TextView) view.findViewById(R.id.title);
+
+                songDetails.putExtra("artist", artistText.getText());
+                songDetails.putExtra("title", songText.getText());
+
                 startActivity(songDetails);
             }
         });
