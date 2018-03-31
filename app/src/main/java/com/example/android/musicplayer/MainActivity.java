@@ -25,19 +25,19 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
 
-        ArrayList<Song> words = new ArrayList<Song>();
-        words.add(new Song("Britney Spears", "Work Bitch"));
-        words.add(new Song("Madonna", "Frozen"));
-        words.add(new Song("Depeche Mode", "Free Love"));
-        words.add(new Song("Robbie Williams", "Freedom"));
-        words.add(new Song("ABBA", "Mama Mia"));
-        words.add(new Song("Betta Lemme", "Bambola"));
-        words.add(new Song("Jacob Groening", "Haidi"));
-        words.add(new Song("Alice Merton", "No Roots"));
-        words.add(new Song("Lana Del Rey", "West Coast"));
-        words.add(new Song("Beyonce", "Yonce"));
+        ArrayList<Song> songArrayList = new ArrayList<Song>();
+        songArrayList.add(new Song("Britney Spears", "Work Bitch"));
+        songArrayList.add(new Song("Madonna", "Frozen"));
+        songArrayList.add(new Song("Depeche Mode", "Free Love"));
+        songArrayList.add(new Song("Robbie Williams", "Freedom"));
+        songArrayList.add(new Song("ABBA", "Mama Mia"));
+        songArrayList.add(new Song("Betta Lemme", "Bambola"));
+        songArrayList.add(new Song("Jacob Groening", "Haidi"));
+        songArrayList.add(new Song("Alice Merton", "No Roots"));
+        songArrayList.add(new Song("Lana Del Rey", "West Coast"));
+        songArrayList.add(new Song("Beyonce", "Yonce"));
 
-        SongAdapter itemsAdapter = new SongAdapter(this, words);
+        SongAdapter itemsAdapter = new SongAdapter(this, songArrayList);
         ListView songList = (ListView) findViewById(R.id.list);
         songList.setAdapter(itemsAdapter);
 
